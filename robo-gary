@@ -24,12 +24,12 @@ $classLoader = require $autoloaderPath;
 
 // Customization variables
 $argv = $_SERVER['argv'];
-$appName = "ExampleProject";
+$appName = "RoboGary";
 $appVersion = trim(file_get_contents(__DIR__ . '/VERSION'));
-$commandClasses = [ \ExampleProject\Cli\ExampleCommands::class ];
-$selfUpdateRepository = 'g1a/starter';
-$configPrefix = 'EXAMPLEPROJECT';
-$configFilePath = getenv($configPrefix . '_CONFIG') ?: getenv('HOME') . '/.example-project/example-project.yml';
+$commandClasses = [ \RoboGary\Cli\GaryCommands::class ];
+$selfUpdateRepository = 'jbertoen/robo-gary';
+$configPrefix = 'ROBOGARY';
+$configFilePath = getenv($configPrefix . '_CONFIG') ?: getenv('HOME') . '/.robo-gary/robo-gary.yml';
 
 // Define our Runner, and pass it the command classes we provide.
 $runner = new \Robo\Runner($commandClasses);
@@ -37,6 +37,7 @@ $runner
   ->setSelfUpdateRepository($selfUpdateRepository)
   ->setConfigurationFilename($configFilePath)
   ->setEnvConfigPrefix($configPrefix)
+  ->setRelativePluginNamespace('Robo\Plugin')
   ->setClassLoader($classLoader);
 
 // Execute the command and return the result.

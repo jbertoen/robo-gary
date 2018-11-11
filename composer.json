@@ -1,26 +1,28 @@
 {
-    "name": "g1a/starter",
+    "name": "jbertoen/robo-gary",
     "description": "Template project for PHP libraries.",
     "license": "MIT",
     "authors": [
         {
-            "name": "Greg Anderson",
-            "email": "greg.1.anderson@greenknowe.org"
+            "name": "jefuri",
+            "email": "jeffrey@synetic.nl"
         }
     ],
-    "autoload":{
-        "psr-4":{
-            "CustomizeProject\\": "customize",
-            "ExampleProject\\": "src"
+    "autoload": {
+        "psr-4": {
+            "RoboGary\\": "src"
         }
     },
-    "autoload-dev":{
-        "psr-4":{
-            "ExampleProject\\": "tests/src"
+    "autoload-dev": {
+        "psr-4": {
+            "RoboGary\\": "tests/src"
         }
     },
     "require": {
-        "php": ">=7.1"
+        "php": ">=7.1",
+        "bitbucket/client": "^1.1",
+        "symfony/yaml": "^4.1",
+        "thereference/robo-lando": "^1.0"
     },
     "require-dev": {
         "consolidation/Robo": "^1.3",
@@ -32,9 +34,6 @@
         "squizlabs/php_codesniffer": "^2.8"
     },
     "scripts": {
-        "customize": [
-            "CustomizeProject\\Customizer::customize"
-        ],
         "phar:install-tools": [
             "mkdir -p tools",
             "curl -L https://github.com/humbug/box/releases/download/3.0.0/box.phar -o tools/box",
@@ -57,9 +56,6 @@
             "release VERSION"
         ],
         "scenario": "scenarios/install",
-        "post-create-project-cmd": [
-            "@customize"
-        ],
         "post-update-cmd": [
             "dependency-licenses"
         ]

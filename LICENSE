@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2018 Greg Anderson
+Copyright (c) 2018 jefuri
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -21,4 +21,41 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 DEPENDENCY LICENSES:
 
-Name  Version  License  
+[32mName                                 [39m[32mVersion  [39m[32mLicense  [39m
+bitbucket/client                     v1.1.0   MIT      
+clue/stream-filter                   v1.4.0   MIT      
+consolidation/annotated-command      2.9.1    MIT      
+consolidation/config                 1.1.1    MIT      
+consolidation/log                    1.0.6    MIT      
+consolidation/output-formatters      3.4.0    MIT      
+consolidation/robo                   1.3.1    MIT      
+consolidation/self-update            1.1.5    MIT      
+container-interop/container-interop  1.2.0    MIT      
+dflydev/dot-access-data              v1.1.0   MIT      
+g1a/composer-test-scenarios          2.2.0    MIT      
+graham-campbell/cache-plugin         v1.0.0   MIT      
+grasmash/expander                    1.0.0    MIT      
+grasmash/yaml-expander               1.4.0    MIT      
+league/container                     2.4.1    MIT      
+php-http/cache-plugin                v1.5.0   MIT      
+php-http/client-common               1.8.1    MIT      
+php-http/discovery                   1.4.0    MIT      
+php-http/httplug                     v1.1.0   MIT      
+php-http/message                     1.7.2    MIT      
+php-http/message-factory             v1.0.2   MIT      
+php-http/multipart-stream-builder    1.0.0    MIT      
+php-http/promise                     v1.0.0   MIT      
+psr/cache                            1.0.1    MIT      
+psr/container                        1.0.0    MIT      
+psr/http-message                     1.0.1    MIT      
+psr/log                              1.0.2    MIT      
+symfony/console                      v4.1.6   MIT      
+symfony/event-dispatcher             v4.1.6   MIT      
+symfony/filesystem                   v4.1.6   MIT      
+symfony/finder                       v4.1.6   MIT      
+symfony/options-resolver             v4.1.6   MIT      
+symfony/polyfill-ctype               v1.10.0  MIT      
+symfony/polyfill-mbstring            v1.10.0  MIT      
+symfony/process                      v4.1.6   MIT      
+symfony/yaml                         v4.1.7   MIT      
+thereference/robo-lando              1.0.0    MIT      
